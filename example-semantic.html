@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <style>
       
@@ -16,23 +17,48 @@
       
     </style>
   </head>
-  <body class="container content-body">
-  
-    <section class="row content-article well">       
-      <article class="col-md-8 content-section"> 
+  <body>
+  	<section class="container"></section>
+		<!-- >
+		<!-- Two-third section -->
+    <section class="container">       
+      <article class="col-md-8"> 
         <header>
-          <h2>Left title</h2>
+					<h3>Pre-header</h3>
+          <h2>Article title which can be long</h2>
+					<h4>occasional subtitle</h4>
         </header>
-        <p>Content for the left goes here</p>
+        <p>GBIF has awarded its prestigious Ebbe Nielsen Prize for 2014 to Tony Rees, whose groundbreaking informatics tools have significantly advanced the delivery of data about life on Earth.</p>
+				<ul>
+					<li>Developing the <a href="http://www.cmar.csiro.au/csquares/">‘c-squares’ spatial index and mapping system</a>, which enables data relating to any position on the Earth’s surface to be expressed in simple, text-based format as a kind of ‘global postcode’. This enables rapid search, retrieval and mapping of georeferenced data such as the results of biodiversity surveys or aggregated species occurrence data.</li>
+					<li>A redesign of the Ocean Biogeographic Information System (<a href="http://www.iobis.org">OBIS</a>), introducing centralized taxonomic indexing, spatial indexing and rapid online mapping for the first time. Rees is manager of the Australian node of OBIS.</li>
+				</ul>
+				<blockquote>
+				<p>Your work in multiple areas of biodiversity informatics has contributed significantly to advances in the delivery of marine data, particularly through OBIS, and contributed fundamental tools for wider use by the global community.</p>
+				<footer>Donald Hobern</footer>
+				</blockquote>
+				<blockquote>
+				<p>IRMNG in particular has been a tool of enormous importance to GBIF and others in supplying much of the detail for a global taxonomic classification of all life and as high-value taxon trait data in a form which can readily be reused in data validation and to enhance species pages.</p>
+				<footer>Tony Rees</footer>
+				</blockquote>
+				<!-- to insert an example of quote -->
+				<footer>
+					<h4>Footer could have its title</h4>
+					<p>For more information, please contact:</p>
+					<ul>
+						<li>For GBIF:&nbsp; <a href="mailto:thirsch@gbif.org">Tim Hirsch</a></li>
+						<li>For CSIRO: <a href="mailto:Fiona.Brown@csiro.au">Fiona Brown</a></li>
+					</ul>
+				</footer>
       </article>
 
-      <aside class="col-md-4 content-sidebar">
+      <aside class="col-md-4">
         <header>
           <h2>Right title</h2>        
         </header>
         
         <h3>About</h3>
-        <p>Well, what I write here is an aside...</p>
+        <p>When <em>aside</em> element is used inside <em>article</em>, it's more relevant to the content; when outside, it then is more relevant to the page. Aside isn't necessarily presented as sidebar.</p>
         
         <h3>See also</h3>
         <ul>
@@ -41,5 +67,30 @@
         </ul>
       </aside>
     </section>
+		
+		<!-- Full width section -->
+		<section class="container">
+			<article class="col-md-12 content-section">
+				<header>
+					<h3>Pre-header</h3>
+					<h2>Article title that extends to the full width of the container</h2>
+					<h4>occasional subtitle</h4>
+				</header>
+        <p>GBIF has awarded its prestigious Ebbe Nielsen Prize for 2014 to Tony Rees, whose groundbreaking informatics tools have significantly advanced the delivery of data about life on Earth.</p>
+				<ul>
+					<li>Developing the <a href="http://www.cmar.csiro.au/csquares/">‘c-squares’ spatial index and mapping system</a>, which enables data relating to any position on the Earth’s surface to be expressed in simple, text-based format as a kind of ‘global postcode’. This enables rapid search, retrieval and mapping of georeferenced data such as the results of biodiversity surveys or aggregated species occurrence data.</li>
+					<li>A redesign of the Ocean Biogeographic Information System (<a href="http://www.iobis.org">OBIS</a>), introducing centralized taxonomic indexing, spatial indexing and rapid online mapping for the first time. Rees is manager of the Australian node of OBIS.</li>
+				</ul>
+				<p>“Your work in multiple areas of biodiversity informatics has contributed significantly to advances in the delivery of marine data, particularly through OBIS, and contributed fundamental tools for wider use by the global community.”</p>
+				<footer>
+					<h4>Footer could have its title</h4>
+					<p>For more information, please contact:</p>
+					<ul>
+						<li>For GBIF:&nbsp; <a href="mailto:thirsch@gbif.org">Tim Hirsch</a></li>
+						<li>For CSIRO: <a href="mailto:Fiona.Brown@csiro.au">Fiona Brown</a></li>
+					</ul>
+				</footer>
+			</article>
+		</section>
   </body>
 </html>
